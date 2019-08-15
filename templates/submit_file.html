@@ -1,0 +1,6 @@
+<form method="POST" enctype="multipart/form-data" action="/submitfile">
+    {{ form.hidden_tag() }}
+    {{ form.name.label() }} {{form.name(size=20) }}
+    {{ form.file.label() }} {{form.file() }}
+    <input type="submit" value="Go" />
+</form>
